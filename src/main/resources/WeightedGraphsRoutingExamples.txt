@@ -1,0 +1,49 @@
+Weighted Graph Examples 
+For Shortest Routing
+===========================
+
+These examples are used as testcases in this project
+ShortestPathAlgorithms.
+
+Legend:
+[node]  -w-   -edge
+---------------------------
+
+Testcase 1 :
+ref:  https://www.geeksforgeeks.org/djikstra-shortest-path-algorithm-in-java-using-priorityqueue
+		 [1] -8- [2] -7- [3]
+		/ |       |\      | \ 
+	   4  | 	  | \     |  9
+	  /   |       |  \    |   \
+	[0]   1      [8]  4  14   [4]
+	  \   |    /  |    \  |    /
+	   8  |  7    |     \ |   10
+	    \ |/      |      \|  /
+		 [7] -1- [6] -2- [5]
+Shortest Path: [0, 1, 7, 6, 5, 2, 8, 3, 4]	 
+		 
+Testcase 2
+ref:   https://www.youtube.com/watch?v=pVfj6mxhdMw  
+
+    [0] -6- [1]
+     |      /| \
+	 |     / |  5
+	 |    /  |   \
+     1   2   2    [2]
+     |  /    |   /
+     | /     |  5
+ 	 |/      | /  
+	[3] -1- [4]
+Shortest Path: [0, 3, 4, 1, 2]
+
+Testcase 3
+ref:
+
+	  [1]-4-[0]
+      | \    |
+	  2   1  7
+	  |     \|
+	  |	     |\  
+	 [3]--6--|-[2]
+	        [4] 
+Shortest Path: [0, 1, 2, 3, 4]			

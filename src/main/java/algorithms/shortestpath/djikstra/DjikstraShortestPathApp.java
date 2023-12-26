@@ -17,6 +17,22 @@ public class DjikstraShortestPathApp {
         *   using user inputs start and end nodes
         */
 
+//      Testcase 1 from our notes
+//      ref https://www.geeksforgeeks.org/djikstra-shortest-path-algorithm-in-java-using-priorityqueue
+		Double graph1[][] = new Double[][] {
+//       0	 1   2   3   4   5   6   7   8
+				{0d ,4d ,0d, 0d, 0d, 0d, 0d, 8d, 0d},
+				{4d, 0d, 8d, 0d, 0d, 0d, 0d, 11d,0d},
+				{0d, 8d, 0d, 7d, 0d, 4d, 0d, 0d, 2d},
+				{0d, 0d, 7d, 0d, 9d, 14d,0d, 0d, 0d},
+				{0d, 0d, 0d, 9d, 0d, 10d,0d, 0d, 0d},
+				{0d, 0d, 4d, 14d,10d,0d, 2d, 0d, 0d},
+				{0d, 0d, 0d, 0d, 0d, 2d, 0d, 1d, 6d},
+				{8d, 11d,0d, 0d, 0d, 0d, 1d, 0d, 7d},
+				{0d, 0d, 2d, 0d, 0d, 0d, 6d, 7d, 0d}
+		};
+		// Expected Shortest Path [0, 1, 7, 6, 5, 2, 8, 3, 4]
+
 //      Testcase 2 from our notes
 //      ref:   https://www.youtube.com/watch?v=pVfj6mxhdMw
 		Double graph2[][] = new Double[][] {
@@ -40,22 +56,6 @@ public class DjikstraShortestPathApp {
 			{ 7d, 0d, 0d, 0d, 0d },
 		};
 //      Expected Shortest Path [0, 1, 2, 3, 4]
-
-//      Testcase 1 from our notes
-//      ref https://www.geeksforgeeks.org/djikstra-shortest-path-algorithm-in-java-using-priorityqueue
-        Double graph1[][] = new Double[][] {
-        //       0	 1   2   3   4   5   6   7   8
-                {0d ,4d ,0d, 0d, 0d, 0d, 0d, 8d, 0d},
-                {4d, 0d, 8d, 0d, 0d, 0d, 0d, 11d,0d},
-                {0d, 8d, 0d, 7d, 0d, 4d, 0d, 0d, 2d},
-                {0d, 0d, 7d, 0d, 9d, 14d,0d, 0d, 0d},
-                {0d, 0d, 0d, 9d, 0d, 10d,0d, 0d, 0d},
-                {0d, 0d, 4d, 14d,10d,0d, 2d, 0d, 0d},
-                {0d, 0d, 0d, 0d, 0d, 2d, 0d, 1d, 6d},
-                {8d, 11d,0d, 0d, 0d, 0d, 1d, 0d, 7d},
-                {0d, 0d, 2d, 0d, 0d, 0d, 6d, 7d, 0d}
-        };
-    // Expected Shortest Path [0, 1, 7, 6, 5, 2, 8, 3, 4]
 
         System.out.println("starting");
         IShortestRoutingService shortestRoutingService = new ShortestRoutingService();
