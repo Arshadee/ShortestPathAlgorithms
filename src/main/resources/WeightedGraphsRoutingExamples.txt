@@ -5,6 +5,9 @@ For Shortest Routing
 These examples are used as testcases in this project
 ShortestPathAlgorithms.
 
+Information on each of the testcases used: Graph diagram, expected shortest path solution
+and reference from where the test case was obtained from.
+
 Legend:
 [node]  -w-   -edge
 ---------------------------
